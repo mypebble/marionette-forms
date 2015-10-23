@@ -22,5 +22,5 @@ This library is an extra bit on top of [Marionette Binding](https://github.com/m
 Validation rules are typical just Regexp objects, but can really be anything
 so long as they take a `test(value)` function that returns true or false.
 
-To get a custom message simply set a `message` value or function on the object and
-it'll be displayed when there is an issue.
+To get a custom message simply set a `message` value or function on the object
+and it'll be displayed when there is an issue.
