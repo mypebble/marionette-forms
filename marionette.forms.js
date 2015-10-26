@@ -26,6 +26,7 @@ var FormModelMixin = {
   save: function(){
     // Override the save function to do our validation
     if(!this.valid()){
+      this.state = ModelState.Error;
       return this.trigger('state error');
     }
 
@@ -44,7 +45,7 @@ var FormModelMixin = {
           self.state = ModelState.Error;
           self.trigger('state error error400', res);
         } else{
-          self.state = 'fail';
+          self.state = ModelState.Failure;
           self.trigger('state error error' + res.status, res);
         }
     });

@@ -2,6 +2,7 @@
   "name": "marionette.forms",
   "version": "0.0.1",
   "description": "Form library for Marionette to keep it DRY!",
+  "main": "marionette.forms.js",
   "dependencies": {
     "marionette.binding": "*",
     "backbone": "^1.2.1",
