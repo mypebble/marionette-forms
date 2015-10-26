@@ -3,7 +3,10 @@
   "version": "0.0.1",
   "description": "Form library for Marionette to keep it DRY!",
   "dependencies": {
-    "marionette.binding": "*"
+    "marionette.binding": "*",
+    "backbone": "^1.2.1",
+    "backbone.marionette": "^2.4.2",
+    "underscore": "^1.8.3"
   },
   "devDependencies": {
     "browserify": "^11.2.0",
