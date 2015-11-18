@@ -1,5 +1,7 @@
 # Marionette Forms
 
+[![NPM](https://nodei.co/npm/marionette.forms.png)](https://npmjs.org/package/marionette.forms)
+
 This library adds some useful functionality to Marionette and Backbone in order
 to make it easier to create any kind of form in Marionette.
 
