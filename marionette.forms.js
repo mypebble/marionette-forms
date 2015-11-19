@@ -72,6 +72,7 @@ var FormModelMixin = {
         rules = [rules];
       }
       _.each(rules, function(rule){
+        rule.model = this;
         if(rule.test(value, this) == false){
           valid = false;
           this.addError(key, _.result(rule, 'message', 'Invalid value'));
