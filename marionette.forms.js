@@ -39,7 +39,7 @@ var FormModelMixin = {
         self.trigger('saved');
     }).fail(function(res, textStatus, errorThrown){
         // Handle failure
-        if(res.status >= 400 && res.response < 500){
+        if(res.status >= 400 && res.status < 500){
           // Request Error
           self.parseError.call(self, res);
           self.state = ModelState.Error;
@@ -59,7 +59,7 @@ var FormModelMixin = {
     // By default can parse Django Rest Framework Responses!
     _.each(res.responseJSON, function(v, k){
       this.addError(k, v);
-    });
+    }, this);
   },
 
   valid: function(){
